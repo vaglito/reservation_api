@@ -38,3 +38,10 @@ class ReservationAdmin(admin.ModelAdmin):
         'id',
         'table',
     ]
+
+
+    
+
+admin.site.site_header = "Panel de Administración – Reservas"
+admin.site.site_title = "Admin Reservas"
+admin.site.index_title = "Bienvenido al panel de reservas"
