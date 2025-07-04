@@ -9,7 +9,7 @@ from datetime import timedelta
 class TableViewSet(viewsets.ModelViewSet):
     query = Table.objects.all()
     serializer_class = TableSerializer
-    permission_classes = [permissions.IsAdmin]
+    permission_classes = [permissions.IsAdminUser]
 
 class ReservationViewSet(viewsets.ModelViewSet):
     serializer_class = ReservationSerializer
